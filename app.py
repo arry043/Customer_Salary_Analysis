@@ -66,6 +66,13 @@ prediction = model.predict(input_data_scaled)
 pradiction_probability = prediction[0][0]
 
 
-# result
-st.write("### Prediction Result")
-st.write(f"The estimated salary for the customer is: ${pradiction_probability:.2f}")
+# submit button to show the prediction 
+if st.button("Predict Estimated Salary"):
+    st.write("### Prediction Result")
+    st.success(f"The estimated salary is: ${pradiction_probability:.2f}")
+
+
+# # result
+# st.write("### Prediction Result")
+
+# st.write(f"The estimated salary for the customer is: ${pradiction_probability:.2f}")
